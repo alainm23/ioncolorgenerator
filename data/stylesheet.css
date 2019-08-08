@@ -1,0 +1,29 @@
+grid.titlebar { 
+	padding: 0;
+}
+
+.titlebar {
+    border: none;
+}
+
+.input-header:dir(ltr) {
+    border-top-right-radius: 0;
+}
+
+.input-header:dir(rtl) {
+    border-top-left-radius: 0;
+}
+
+.output-header {
+    background-color: #FDF6E3;
+}
+
+.output-header:dir(ltr) {
+    border-left: solid 1px shade (@menu_separator, 0.8);
+    border-top-left-radius: 0;
+}
+
+.output-header:dir(rtl) {
+    border-right: solid 1px shade (@menu_separator, 0.8);
+    border-top-right-radius: 0;
+}

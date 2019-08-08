@@ -1,0 +1,84 @@
+Build started at 2019-08-08T11:38:27.437028
+Main binary: /usr/bin/python3
+Python system: Linux
+The Meson build system
+Version: 0.49.2
+Source dir: /home/alain/Proyectos/ion-color-generator
+Build dir: /home/alain/Proyectos/ion-color-generator/build
+Build type: native build
+Project name: com.github.alainm23.ion-color-generator
+Project version: 0.0.1
+Native C compiler: cc (gcc 7.4.0 "cc (Ubuntu 7.4.0-1ubuntu1~18.04) 7.4.0")
+Native Vala compiler: valac (valac 0.40.15)
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Configuring config.h using configuration
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'glib-2.0' with pkg-config executable '/usr/bin/pkg-config'
+Called `/usr/bin/pkg-config --modversion glib-2.0` -> 0
+2.56.4
+Called `/usr/bin/pkg-config --cflags glib-2.0` -> 0
+-I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include
+Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
+-L/usr/lib/x86_64-linux-gnu -lglib-2.0
+Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
+-lglib-2.0
+Running compile:
+Working directory:  /tmp/tmp4wgcb6sg
+Command line:  cc /tmp/tmp4wgcb6sg/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp4wgcb6sg/output.exe -O0 
+
+Code:
+ #include<stdio.h>
+        
+        int main(int argc, char **argv) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /tmp/tmpedzx1koz
+Command line:  cc /tmp/tmpedzx1koz/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpedzx1koz/output.obj -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /usr/lib/gcc/x86_64-linux-gnu/7/
+programs: =/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/bin/
+libraries: =/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/7/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/7/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+Dependency gee-0.8 found: YES (cached)
+Dependency gobject-2.0 found: YES (cached)
+Dependency glib-2.0 found: YES (cached)
+Dependency granite found: YES (cached)
+Dependency gtk+-3.0 found: YES (cached)
+Dependency gtksourceview-3.0 found: YES (cached)
+Running compile:
+Working directory:  /tmp/tmpvmkkppz2
+Command line:  cc /tmp/tmpvmkkppz2/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpvmkkppz2/output.exe -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(int argc, char **argv) { return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Adding test "Validate desktop file"
+Program appstreamcli found: YES (/usr/bin/appstreamcli)
+Adding test "Validate appdata file"
+Program meson/post_install.py found: YES (/usr/bin/env python3 /home/alain/Proyectos/ion-color-generator/meson/post_install.py)
+Build targets in project: 5
+Found ninja-1.8.2 at /usr/bin/ninja

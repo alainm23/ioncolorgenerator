@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Ion Color Generator
+GenericName=Ion Color Generator
+Comment=Never worry about forgetting things again
+Categories=Development;Utility;Office;Education;ProjectManagement;Network;Calendar;
+Exec=com.github.alainm23.ion-color-generator
+Icon=com.github.alainm23.ion-color-generator
+Terminal=false
+Type=Application
+X-GNOME-Gettext-Domain=ion-color-generator
+Keywords=development;task;tasks;project;todo;event;events;weather;calendar;github,issue;issues;

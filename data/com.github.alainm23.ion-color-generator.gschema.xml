@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+    <schema path="/com/github/alainm23/ion-color-generator/" id="com.github.alainm23.ion-color-generator" gettext-domain="com.github.alainm23.ion-color-generator">
+        <key name="window-position" type="ai">
+            <default>[-1, -1]</default>
+            <summary>Most recent window position (x, y)</summary>
+            <description>Most recent window position (x, y)</description>
+        </key>
+    </schema>
+</schemalist>
