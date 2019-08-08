@@ -1,8 +1,7 @@
 <div align="center">
-  <span align="center"> <img width="80" height="70" class="center" src="https://github.com/alainm23/planner/blob/master/data/icons/128/com.github.alainm23.planner.svg" alt="Icon"></span>
   <h1 align="center">Ion Color Generator</h1>
-
-  <a href="https://appcenter.elementary.io/com.github.alainm23.planner"><img src="https://appcenter.elementary.io/badge.svg?new" alt="Get it on AppCenter" /></a>
+ 
+  <a href="https://appcenter.elementary.io/com.github.alainm23.ion-color-generator"><img src="https://appcenter.elementary.io/badge.svg?new" alt="Get it on AppCenter" /></a>
 </div>
 
 ![ion-color-generator](https://raw.githubusercontent.com/alainm23/ion-color-generator/master/data/screenshot-01.png)
@@ -14,6 +13,7 @@ You'll need the following dependencies:
 * gobject-2.0
 * granite >=0.5
 * gtk+-3.0
+* gtksourceview-3.0
 * meson
 * valac
 
@@ -33,7 +33,7 @@ com.github.alainm23.ion-color-generator
 ```
 
 ## Donations
-Stripe is not yet available in my country, If you like Planner and you want to support its development, consider donating via [PayPal](https://www.paypal.me/alainm23)
+Stripe is not yet available in my country, If you like Ion Color Generator and you want to support its development, consider donating via [PayPal](https://www.paypal.me/alainm23)
 
 Made with ❤ in Perú
 

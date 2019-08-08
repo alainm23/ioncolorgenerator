@@ -1,6 +1,6 @@
 project('com.github.alainm23.ion-color-generator',
         'vala', 'c',
-        version: '0.0.1')
+        version: '0.1')
 
 gnome = import('gnome')
 i18n = import('i18n')
