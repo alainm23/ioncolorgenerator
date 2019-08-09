@@ -12,3 +12,12 @@
 364	700	1565285639	com.github.alainm23.ion-color-generator@exe/meson-generated_src_MainWindow.c.o	fa034f9f06dd6d1f
 6	1104	1556725389	data/com.github.alainm23.ion-color-generator.appdata.xml	3c41ea3427189b6b
 1	364	1565285630	com.github.alainm23.ion-color-generator@exe/src/Application.c	d1d018748db6d92e
+0	3412	1565384970	build.ninja	b0020f1989ca5c77
+2	7	1565384970	as-resources.c	9f423015e3be8e79
+7	244	1565384971	com.github.alainm23.ion-color-generator@exe/meson-generated_.._as-resources.c.o	ff6709e3fc60dae5
+2	609	1565384971	data/com.github.alainm23.ion-color-generator.desktop	5b25674340e99b34
+2	730	1565384971	data/com.github.alainm23.ion-color-generator.appdata.xml	3c41ea3427189b6b
+2	744	1565320799	com.github.alainm23.ion-color-generator@exe/src/Application.c	d1d018748db6d92e
+2	744	1565320799	com.github.alainm23.ion-color-generator@exe/src/MainWindow.c	d1d018748db6d92e
+744	1111	1565384971	com.github.alainm23.ion-color-generator@exe/meson-generated_src_MainWindow.c.o	fa034f9f06dd6d1f
+1111	1357	1565384972	com.github.alainm23.ion-color-generator	b917875e9f27d85a

@@ -173,19 +173,19 @@ _variant_new5 (gint* value,
 	gint* _tmp5_;
 	GVariantBuilder _tmp6_;
 	int _tmp7_;
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp5_ = value;
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_variant_builder_init (&_tmp6_, G_VARIANT_TYPE ("ai"));
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	for (_tmp7_ = 0; _tmp7_ < value_length1; _tmp7_++) {
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		g_variant_builder_add_value (&_tmp6_, g_variant_new_int32 (*_tmp5_));
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp5_++;
 #line 187 "MainWindow.c"
 	}
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	return g_variant_ref_sink (g_variant_builder_end (&_tmp6_));
 #line 191 "MainWindow.c"
 }
@@ -206,39 +206,39 @@ main_window_real_configure_event (GtkWidget* base,
 	gint* _tmp4_;
 	gint _tmp4__length1;
 	GVariant* _tmp8_;
-#line 154 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 153 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	self = (MainWindow*) base;
-#line 154 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 153 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (event != NULL, FALSE);
-#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 155 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	gtk_window_get_position ((GtkWindow*) self, &_tmp0_, &_tmp1_);
-#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 155 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	root_x = _tmp0_;
-#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 155 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	root_y = _tmp1_;
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp2_ = application_settings;
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp3_ = g_new0 (gint, 2);
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp3_[0] = root_x;
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp3_[1] = root_y;
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp4_ = _tmp3_;
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp4__length1 = 2;
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp8_ = _variant_new5 (_tmp4_, 2);
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_settings_set_value (_tmp2_, "window-position", _tmp8_);
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_variant_unref0 (_tmp8_);
-#line 157 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp4_ = (g_free (_tmp4_), NULL);
-#line 159 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 158 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	result = GTK_WIDGET_CLASS (main_window_parent_class)->configure_event ((GtkWidget*) G_TYPE_CHECK_INSTANCE_CAST (self, gtk_window_get_type (), GtkWindow), event);
-#line 159 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 158 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	return result;
 #line 244 "MainWindow.c"
 }
@@ -251,17 +251,17 @@ main_window_update_template (MainWindow* self)
 	GtkEntry* _tmp0_;
 	const gchar* _tmp1_;
 	const gchar* _tmp2_;
-#line 162 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 161 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_if_fail (self != NULL);
-#line 163 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 162 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	memset (&rgba, 0, sizeof (GdkRGBA));
-#line 165 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 164 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp0_ = self->priv->color_entry;
-#line 165 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 164 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp1_ = gtk_entry_get_text (_tmp0_);
-#line 165 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 164 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp2_ = _tmp1_;
-#line 165 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 164 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	if (gdk_rgba_parse (&rgba, _tmp2_)) {
 #line 267 "MainWindow.c"
 		GtkButton* _tmp3_;
@@ -313,136 +313,136 @@ main_window_update_template (MainWindow* self)
 		gchar* _tmp49_;
 		gchar* _tmp50_;
 		gchar* _tmp51_;
-#line 166 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 165 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp3_ = self->priv->copy_button;
-#line 166 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 165 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		gtk_widget_set_sensitive ((GtkWidget*) _tmp3_, TRUE);
-#line 167 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 166 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp4_ = self->priv->color_button;
-#line 167 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 166 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp5_ = rgba;
-#line 167 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 166 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		g_object_set (_tmp4_, "rgba", &_tmp5_, NULL);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp6_ = self->priv->source_buffer;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp7_ = self->priv->TEMPLATE;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp8_ = self->priv->name_entry;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp9_ = gtk_entry_get_text (_tmp8_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp10_ = _tmp9_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp11_ = self->priv->color_entry;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp12_ = gtk_entry_get_text (_tmp11_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp13_ = _tmp12_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp14_ = rgba;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp15_ = _tmp14_.red;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp16_ = main_window_double_to_string (self, _tmp15_ * 255);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp17_ = _tmp16_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp18_ = rgba;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp19_ = _tmp18_.green;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp20_ = main_window_double_to_string (self, _tmp19_ * 255);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp21_ = _tmp20_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp22_ = rgba;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp23_ = _tmp22_.blue;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp24_ = main_window_double_to_string (self, _tmp23_ * 255);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp25_ = _tmp24_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp26_ = g_strdup_printf ("%s, %s, %s", _tmp17_, _tmp21_, _tmp25_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp27_ = _tmp26_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp28_ = self->priv->color_entry;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp29_ = gtk_entry_get_text (_tmp28_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp30_ = _tmp29_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp31_ = main_window_get_contrast (self, _tmp30_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp32_ = _tmp31_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp33_ = self->priv->color_entry;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp34_ = gtk_entry_get_text (_tmp33_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp35_ = _tmp34_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp36_ = main_window_get_contrast (self, _tmp35_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp37_ = _tmp36_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp38_ = main_window_get_contrast_to_rgb (self, _tmp37_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp39_ = _tmp38_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp40_ = self->priv->color_entry;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp41_ = gtk_entry_get_text (_tmp40_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp42_ = _tmp41_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp43_ = main_window_calculate_shade (self, _tmp42_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp44_ = _tmp43_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp45_ = self->priv->color_entry;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp46_ = gtk_entry_get_text (_tmp45_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp47_ = _tmp46_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp48_ = main_window_calculate_tint (self, _tmp47_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp49_ = _tmp48_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp50_ = g_strdup_printf (_tmp7_, _tmp10_, _tmp13_, _tmp27_, _tmp32_, _tmp39_, _tmp44_, _tmp49_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp51_ = _tmp50_;
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		g_object_set ((GtkTextBuffer*) _tmp6_, "text", _tmp51_, NULL);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_g_free0 (_tmp51_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_g_free0 (_tmp49_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_g_free0 (_tmp44_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_g_free0 (_tmp39_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_g_free0 (_tmp37_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_g_free0 (_tmp32_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_g_free0 (_tmp27_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_g_free0 (_tmp25_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_g_free0 (_tmp21_);
-#line 169 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 168 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_g_free0 (_tmp17_);
 #line 441 "MainWindow.c"
 	} else {
 		GtkButton* _tmp52_;
-#line 179 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 178 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp52_ = self->priv->copy_button;
-#line 179 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 178 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		gtk_widget_set_sensitive ((GtkWidget*) _tmp52_, FALSE);
 #line 448 "MainWindow.c"
 	}
@@ -487,13 +487,13 @@ main_window_double_to_string (MainWindow* self,
 {
 	gchar* result = NULL;
 	gchar* _tmp0_;
-#line 183 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 182 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 184 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 183 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp0_ = double_to_string (d);
-#line 184 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 183 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	result = _tmp0_;
-#line 184 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 183 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	return result;
 #line 499 "MainWindow.c"
 }
@@ -512,29 +512,29 @@ main_window_rgb_to_hex_string (MainWindow* self,
 	GdkRGBA _tmp4_;
 	gdouble _tmp5_;
 	gchar* _tmp6_;
-#line 187 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 186 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 187 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 186 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (rgba != NULL, NULL);
-#line 188 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 187 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp0_ = *rgba;
-#line 188 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 187 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp1_ = _tmp0_.red;
-#line 188 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 187 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp2_ = *rgba;
-#line 188 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 187 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp3_ = _tmp2_.green;
-#line 188 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 187 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp4_ = *rgba;
-#line 188 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 187 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp5_ = _tmp4_.blue;
-#line 188 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 187 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp6_ = g_strdup_printf ("#%02x%02x%02x", (guint) (_tmp1_ * 255), (guint) (_tmp3_ * 255), (guint) (_tmp5_ * 255));
-#line 188 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 187 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	s = _tmp6_;
-#line 192 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 191 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	result = s;
-#line 192 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 191 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	return result;
 #line 540 "MainWindow.c"
 }
@@ -558,57 +558,57 @@ main_window_get_contrast (MainWindow* self,
 	gchar* _tmp4_;
 	gdouble _tmp5_;
 	gdouble _tmp6_;
-#line 195 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 194 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 195 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 194 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (hex != NULL, NULL);
-#line 196 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 195 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	memset (&gdk_white, 0, sizeof (GdkRGBA));
-#line 197 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 196 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	gdk_rgba_parse (&gdk_white, "#fff");
-#line 199 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 198 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	memset (&gdk_black, 0, sizeof (GdkRGBA));
-#line 200 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 199 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	gdk_rgba_parse (&gdk_black, "#000");
-#line 202 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 201 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	memset (&gdk_bg, 0, sizeof (GdkRGBA));
-#line 203 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 202 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	gdk_rgba_parse (&gdk_bg, hex);
-#line 205 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 204 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp0_ = gdk_bg;
-#line 205 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 204 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp1_ = gdk_white;
-#line 205 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 204 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	contrast_white = main_window_contrast_ratio (self, &_tmp0_, &_tmp1_);
-#line 210 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 209 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp2_ = gdk_bg;
-#line 210 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 209 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp3_ = gdk_black;
-#line 210 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 209 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	contrast_black = main_window_contrast_ratio (self, &_tmp2_, &_tmp3_);
-#line 215 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 214 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp4_ = g_strdup ("#fff");
-#line 215 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 214 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	fg_color = _tmp4_;
-#line 219 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 218 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp5_ = contrast_black;
-#line 219 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 218 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp6_ = contrast_white;
-#line 219 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 218 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	if (_tmp5_ > (_tmp6_ + 3)) {
 #line 600 "MainWindow.c"
 		gchar* _tmp7_;
-#line 220 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 219 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp7_ = g_strdup ("#000");
-#line 220 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 219 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_g_free0 (fg_color);
-#line 220 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 219 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		fg_color = _tmp7_;
 #line 608 "MainWindow.c"
 	}
-#line 223 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 222 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	result = fg_color;
-#line 223 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 222 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	return result;
 #line 614 "MainWindow.c"
 }
@@ -628,46 +628,46 @@ main_window_contrast_ratio (MainWindow* self,
 	gdouble _tmp3_;
 	gdouble _tmp6_;
 	gdouble _tmp7_;
-#line 226 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 225 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (self != NULL, 0.0);
-#line 226 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 225 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (bg_color != NULL, 0.0);
-#line 226 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 225 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (fg_color != NULL, 0.0);
-#line 227 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 226 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp0_ = *bg_color;
-#line 227 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 226 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	bg_luminance = main_window_get_luminance (self, &_tmp0_);
-#line 228 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 227 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp1_ = *fg_color;
-#line 228 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 227 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	fg_luminance = main_window_get_luminance (self, &_tmp1_);
-#line 230 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 229 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp2_ = bg_luminance;
-#line 230 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 229 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp3_ = fg_luminance;
-#line 230 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 229 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	if (_tmp2_ > _tmp3_) {
 #line 652 "MainWindow.c"
 		gdouble _tmp4_;
 		gdouble _tmp5_;
-#line 231 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 230 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp4_ = bg_luminance;
-#line 231 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 230 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		_tmp5_ = fg_luminance;
-#line 231 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 230 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		result = (_tmp4_ + 0.05) / (_tmp5_ + 0.05);
-#line 231 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 230 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		return result;
 #line 663 "MainWindow.c"
 	}
-#line 234 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 233 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp6_ = fg_luminance;
-#line 234 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 233 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp7_ = bg_luminance;
-#line 234 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 233 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	result = (_tmp6_ + 0.05) / (_tmp7_ + 0.05);
-#line 234 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 233 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	return result;
 #line 673 "MainWindow.c"
 }
@@ -687,31 +687,31 @@ main_window_get_luminance (MainWindow* self,
 	gdouble blue = 0.0;
 	GdkRGBA _tmp4_;
 	gdouble _tmp5_;
-#line 237 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 236 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (self != NULL, 0.0);
-#line 237 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 236 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (color != NULL, 0.0);
-#line 238 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 237 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp0_ = *color;
-#line 238 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 237 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp1_ = _tmp0_.red;
-#line 238 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 237 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	red = main_window_sanitize_color (self, _tmp1_) * 0.2126;
-#line 239 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 238 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp2_ = *color;
-#line 239 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 238 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp3_ = _tmp2_.green;
-#line 239 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 238 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	green = main_window_sanitize_color (self, _tmp3_) * 0.7152;
-#line 240 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 239 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp4_ = *color;
-#line 240 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 239 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp5_ = _tmp4_.blue;
-#line 240 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 239 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	blue = main_window_sanitize_color (self, _tmp5_) * 0.0722;
-#line 242 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 241 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	result = (red + green) + blue;
-#line 242 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 241 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	return result;
 #line 717 "MainWindow.c"
 }
@@ -722,19 +722,19 @@ main_window_sanitize_color (MainWindow* self,
                             gdouble color)
 {
 	gdouble result = 0.0;
-#line 245 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 244 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (self != NULL, 0.0);
-#line 246 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 245 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	if (color <= 0.03928) {
-#line 247 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 246 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		result = color / 12.92;
-#line 247 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 246 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 		return result;
 #line 734 "MainWindow.c"
 	}
-#line 250 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 249 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	result = pow ((color + 0.055) / 1.055, 2.4);
-#line 250 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 249 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	return result;
 #line 740 "MainWindow.c"
 }
@@ -760,51 +760,51 @@ main_window_get_contrast_to_rgb (MainWindow* self,
 	gchar* _tmp11_;
 	gchar* _tmp12_;
 	gchar* _tmp13_;
-#line 253 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 252 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 253 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 252 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (hex != NULL, NULL);
-#line 254 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 253 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	memset (&rgba, 0, sizeof (GdkRGBA));
-#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 254 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	gdk_rgba_parse (&rgba, hex);
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp0_ = rgba;
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp1_ = _tmp0_.red;
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp2_ = main_window_double_to_string (self, _tmp1_ * 255);
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp3_ = _tmp2_;
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp4_ = rgba;
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp5_ = _tmp4_.green;
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp6_ = main_window_double_to_string (self, _tmp5_ * 255);
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp7_ = _tmp6_;
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp8_ = rgba;
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp9_ = _tmp8_.blue;
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp10_ = main_window_double_to_string (self, _tmp9_ * 255);
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp11_ = _tmp10_;
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp12_ = g_strdup_printf ("%s, %s, %s", _tmp3_, _tmp7_, _tmp11_);
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp13_ = _tmp12_;
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_free0 (_tmp11_);
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_free0 (_tmp7_);
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_free0 (_tmp3_);
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	result = _tmp13_;
-#line 256 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 255 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	return result;
 #line 810 "MainWindow.c"
 }
@@ -842,79 +842,79 @@ main_window_calculate_tint (MainWindow* self,
 	gchar* _tmp19_;
 	GdkRGBA _tmp20_;
 	gchar* _tmp21_;
-#line 259 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 258 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 259 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 258 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (hex != NULL, NULL);
-#line 260 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 259 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	memset (&rgba, 0, sizeof (GdkRGBA));
-#line 261 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 260 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	gdk_rgba_parse (&rgba, hex);
-#line 264 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 263 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp0_ = rgba;
-#line 264 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 263 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp1_ = _tmp0_.red;
-#line 264 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 263 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp2_ = rgba;
-#line 264 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 263 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp3_ = _tmp2_.red;
-#line 264 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 263 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	r = (_tmp1_ * 255) + ((255 - (_tmp3_ * 255)) * 0.1);
-#line 265 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 264 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp4_ = rgba;
-#line 265 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 264 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp5_ = _tmp4_.green;
-#line 265 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 264 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp6_ = rgba;
-#line 265 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 264 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp7_ = _tmp6_.green;
-#line 265 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 264 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g = (_tmp5_ * 255) + ((255 - (_tmp7_ * 255)) * 0.1);
-#line 266 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 265 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp8_ = rgba;
-#line 266 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 265 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp9_ = _tmp8_.blue;
-#line 266 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 265 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp10_ = rgba;
-#line 266 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 265 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp11_ = _tmp10_.blue;
-#line 266 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 265 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	b = (_tmp9_ * 255) + ((255 - (_tmp11_ * 255)) * 0.1);
-#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 267 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	memset (&new_rgba, 0, sizeof (GdkRGBA));
-#line 269 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp12_ = double_to_string (r);
-#line 269 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp13_ = _tmp12_;
-#line 269 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp14_ = double_to_string (g);
-#line 269 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp15_ = _tmp14_;
-#line 269 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp16_ = double_to_string (b);
-#line 269 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp17_ = _tmp16_;
-#line 269 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp18_ = g_strdup_printf ("rgb (%s, %s, %s)", _tmp13_, _tmp15_, _tmp17_);
-#line 269 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp19_ = _tmp18_;
-#line 269 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	gdk_rgba_parse (&new_rgba, _tmp19_);
-#line 269 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_free0 (_tmp19_);
-#line 269 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_free0 (_tmp17_);
-#line 269 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_free0 (_tmp15_);
-#line 269 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 268 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_free0 (_tmp13_);
-#line 271 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 270 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp20_ = new_rgba;
-#line 271 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 270 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp21_ = main_window_rgb_to_hex_string (self, &_tmp20_);
-#line 271 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 270 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	result = _tmp21_;
-#line 271 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 270 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	return result;
 #line 920 "MainWindow.c"
 }
@@ -946,67 +946,67 @@ main_window_calculate_shade (MainWindow* self,
 	gchar* _tmp13_;
 	GdkRGBA _tmp14_;
 	gchar* _tmp15_;
-#line 274 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 273 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (self != NULL, NULL);
-#line 274 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 273 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (hex != NULL, NULL);
-#line 275 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 274 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	memset (&rgba, 0, sizeof (GdkRGBA));
-#line 276 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 275 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	gdk_rgba_parse (&rgba, hex);
-#line 279 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 278 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp0_ = rgba;
-#line 279 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 278 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp1_ = _tmp0_.red;
-#line 279 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 278 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	r = (_tmp1_ * 255) * 0.9;
-#line 280 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 279 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp2_ = rgba;
-#line 280 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 279 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp3_ = _tmp2_.green;
-#line 280 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 279 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g = (_tmp3_ * 255) * 0.9;
-#line 281 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 280 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp4_ = rgba;
-#line 281 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 280 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp5_ = _tmp4_.blue;
-#line 281 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 280 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	b = (_tmp5_ * 255) * 0.9;
-#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 282 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	memset (&new_rgba, 0, sizeof (GdkRGBA));
-#line 284 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp6_ = double_to_string (r);
-#line 284 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp7_ = _tmp6_;
-#line 284 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp8_ = double_to_string (g);
-#line 284 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp9_ = _tmp8_;
-#line 284 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp10_ = double_to_string (b);
-#line 284 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp11_ = _tmp10_;
-#line 284 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp12_ = g_strdup_printf ("rgb (%s, %s, %s)", _tmp7_, _tmp9_, _tmp11_);
-#line 284 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp13_ = _tmp12_;
-#line 284 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	gdk_rgba_parse (&new_rgba, _tmp13_);
-#line 284 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_free0 (_tmp13_);
-#line 284 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_free0 (_tmp11_);
-#line 284 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_free0 (_tmp9_);
-#line 284 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 283 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_free0 (_tmp7_);
-#line 286 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 285 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp14_ = new_rgba;
-#line 286 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 285 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp15_ = main_window_rgb_to_hex_string (self, &_tmp14_);
-#line 286 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 285 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	result = _tmp15_;
-#line 286 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 285 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	return result;
 #line 1012 "MainWindow.c"
 }
@@ -1058,7 +1058,7 @@ static void
 _main_window_update_template_gtk_editable_changed (GtkEditable* _sender,
                                                    gpointer self)
 {
-#line 141 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 140 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	main_window_update_template ((MainWindow*) self);
 #line 1064 "MainWindow.c"
 }
@@ -1075,25 +1075,25 @@ _main_window___lambda4_ (MainWindow* self)
 	gchar* _tmp4_;
 	GtkEntry* _tmp5_;
 	const gchar* _tmp6_;
-#line 144 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
-	_tmp0_ = self->priv->color_button;
-#line 144 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
-	g_object_get (_tmp0_, "rgba", &_tmp1_, NULL);
-#line 144 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
-	_tmp2_ = _tmp1_;
-#line 144 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
-	_tmp3_ = *_tmp2_;
-#line 144 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
-	_tmp4_ = main_window_rgb_to_hex_string (self, &_tmp3_);
-#line 144 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
-	hex = _tmp4_;
-#line 145 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
-	_tmp5_ = self->priv->color_entry;
-#line 145 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
-	_tmp6_ = hex;
-#line 145 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
-	gtk_entry_set_text (_tmp5_, _tmp6_);
 #line 143 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+	_tmp0_ = self->priv->color_button;
+#line 143 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+	g_object_get (_tmp0_, "rgba", &_tmp1_, NULL);
+#line 143 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+	_tmp2_ = _tmp1_;
+#line 143 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+	_tmp3_ = *_tmp2_;
+#line 143 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+	_tmp4_ = main_window_rgb_to_hex_string (self, &_tmp3_);
+#line 143 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+	hex = _tmp4_;
+#line 144 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+	_tmp5_ = self->priv->color_entry;
+#line 144 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+	_tmp6_ = hex;
+#line 144 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+	gtk_entry_set_text (_tmp5_, _tmp6_);
+#line 142 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_free0 (hex);
 #line 1099 "MainWindow.c"
 }
@@ -1103,7 +1103,7 @@ static void
 __main_window___lambda4__gtk_color_button_color_set (GtkColorButton* _sender,
                                                      gpointer self)
 {
-#line 143 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 142 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_main_window___lambda4_ ((MainWindow*) self);
 #line 1109 "MainWindow.c"
 }
@@ -1120,27 +1120,27 @@ _main_window___lambda5_ (Block1Data* _data1_)
 	gchar* _tmp4_;
 	gchar* _tmp5_;
 	GraniteWidgetsToast* _tmp6_;
-#line 148 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 147 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	self = _data1_->self;
-#line 149 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 148 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp0_ = gtk_widget_get_display ((GtkWidget*) self);
-#line 149 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 148 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp1_ = gtk_clipboard_get_default (_tmp0_);
-#line 149 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 148 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp2_ = self->priv->source_buffer;
-#line 149 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 148 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_object_get ((GtkTextBuffer*) _tmp2_, "text", &_tmp3_, NULL);
-#line 149 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 148 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp4_ = _tmp3_;
-#line 149 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 148 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp5_ = _tmp4_;
-#line 149 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 148 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	gtk_clipboard_set_text (_tmp1_, _tmp5_, -1);
-#line 149 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 148 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_free0 (_tmp5_);
-#line 150 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 149 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp6_ = _data1_->toast;
-#line 150 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 149 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	granite_widgets_toast_send_notification (_tmp6_);
 #line 1146 "MainWindow.c"
 }
@@ -1150,7 +1150,7 @@ static void
 __main_window___lambda5__gtk_button_clicked (GtkButton* _sender,
                                              gpointer self)
 {
-#line 148 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 147 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_main_window___lambda5_ (self);
 #line 1156 "MainWindow.c"
 }
@@ -1655,29 +1655,29 @@ main_window_constructor (GType type,
 	_tmp93_ = main_grid;
 #line 136 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	gtk_container_add ((GtkContainer*) self, (GtkWidget*) _tmp93_);
-#line 138 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 137 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp94_ = gtk_widget_get_style_context ((GtkWidget*) self);
-#line 138 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 137 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	gtk_style_context_add_class (_tmp94_, "rounded");
-#line 139 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 138 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp95_ = header_grid;
-#line 139 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 138 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	gtk_window_set_titlebar ((GtkWindow*) self, (GtkWidget*) _tmp95_);
-#line 141 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 140 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp96_ = self->priv->name_entry;
-#line 141 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 140 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_signal_connect_object ((GtkEditable*) _tmp96_, "changed", (GCallback) _main_window_update_template_gtk_editable_changed, self, 0);
-#line 142 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 141 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp97_ = self->priv->color_entry;
-#line 142 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 141 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_signal_connect_object ((GtkEditable*) _tmp97_, "changed", (GCallback) _main_window_update_template_gtk_editable_changed, self, 0);
-#line 143 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 142 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp98_ = self->priv->color_button;
-#line 143 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 142 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_signal_connect_object (_tmp98_, "color-set", (GCallback) __main_window___lambda4__gtk_color_button_color_set, self, 0);
-#line 148 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 147 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp99_ = self->priv->copy_button;
-#line 148 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
+#line 147 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_signal_connect_data (_tmp99_, "clicked", (GCallback) __main_window___lambda5__gtk_button_clicked, block1_data_ref (_data1_), (GClosureNotify) block1_data_unref, 0);
 #line 50 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_g_object_unref0 (sizegroup);

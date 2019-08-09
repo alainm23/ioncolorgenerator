@@ -2,7 +2,7 @@
 Name=Ion Color Generator
 GenericName=Ion Color Generator
 Comment=Create custom color for your Ionic app’s UI.
-Categories=Utility;
+Categories=Utility;Graphics;
 Exec=com.github.alainm23.ion-color-generator
 Icon=com.github.alainm23.ion-color-generator
 Terminal=false

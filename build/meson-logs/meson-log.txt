@@ -1,4 +1,4 @@
-Build started at 2019-08-08T11:38:27.437028
+Build started at 2019-08-09T16:09:30.125332
 Main binary: /usr/bin/python3
 Python system: Linux
 The Meson build system
@@ -7,7 +7,7 @@ Source dir: /home/alain/Proyectos/ion-color-generator
 Build dir: /home/alain/Proyectos/ion-color-generator/build
 Build type: native build
 Project name: com.github.alainm23.ion-color-generator
-Project version: 0.0.1
+Project version: 0.1
 Native C compiler: cc (gcc 7.4.0 "cc (Ubuntu 7.4.0-1ubuntu1~18.04) 7.4.0")
 Native Vala compiler: valac (valac 0.40.15)
 Build machine cpu family: x86_64
@@ -24,8 +24,8 @@ Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
 Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
 -lglib-2.0
 Running compile:
-Working directory:  /tmp/tmp4wgcb6sg
-Command line:  cc /tmp/tmp4wgcb6sg/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp4wgcb6sg/output.exe -O0 
+Working directory:  /tmp/tmpq32d77uq
+Command line:  cc /tmp/tmpq32d77uq/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpq32d77uq/output.exe -O0 
 
 Code:
  #include<stdio.h>
@@ -46,8 +46,8 @@ Program stderr:
 
 
 Running compile:
-Working directory:  /tmp/tmpedzx1koz
-Command line:  cc /tmp/tmpedzx1koz/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpedzx1koz/output.obj -O0 --print-search-dirs 
+Working directory:  /tmp/tmpa8a2dbwv
+Command line:  cc /tmp/tmpa8a2dbwv/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -c -o /tmp/tmpa8a2dbwv/output.obj -O0 --print-search-dirs 
 
 Code:
  
@@ -65,8 +65,8 @@ Dependency granite found: YES (cached)
 Dependency gtk+-3.0 found: YES (cached)
 Dependency gtksourceview-3.0 found: YES (cached)
 Running compile:
-Working directory:  /tmp/tmpvmkkppz2
-Command line:  cc /tmp/tmpvmkkppz2/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmpvmkkppz2/output.exe -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+Working directory:  /tmp/tmp4g558ir7
+Command line:  cc /tmp/tmp4g558ir7/testfile.c -pipe -D_FILE_OFFSET_BITS=64 -o /tmp/tmp4g558ir7/output.exe -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
 
 Code:
  int main(int argc, char **argv) { return 0; }

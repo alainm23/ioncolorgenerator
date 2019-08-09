@@ -7,13 +7,13 @@
   <name>Ion Color Generator</name>
   <summary>Create custom color for your Ionic app’s UI.</summary>
   <description>
-    
+    Fast and easy. Just enter a color, copy and paste into your Ionic project.
   </description>
   <provides>
     <binary>com.github.alainm23.ion-color-generator</binary>
   </provides>
   ​<releases>
-    <release version="0.1" date="2019-08-8">
+    <release version="0.1" date="2019-08-9">
         <description>
             <p>Initial release</p>
         </description>
@@ -59,8 +59,8 @@
   <url type="donation">https://www.patreon.com/alainm23</url>
   <url type="help">https://www.patreon.com/alainm23</url>
   <custom>
-    <value key="x-appcenter-color-primary">#ffe16b</value>
-    <value key="x-appcenter-color-primary-text">#000</value>
+    <value key="x-appcenter-color-primary">#0d52bf</value>
+    <value key="x-appcenter-color-primary-text">#e4c6fa</value>
     <value key="x-appcenter-suggested-price">1</value>
   </custom>
 </component>

@@ -127,14 +127,13 @@ public class MainWindow : Gtk.Window {
         var main_grid = new Gtk.Grid ();
         main_grid.add (left_box);
         main_grid.add (new Gtk.Separator (Gtk.Orientation.VERTICAL));
-        main_grid.add (right_box);
+        main_grid.add (right_box); 
 
         var sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
         sizegroup.add_widget (left_box);
         sizegroup.add_widget (input_header);
 
         add (main_grid);
-
         get_style_context ().add_class ("rounded");
         set_titlebar (header_grid);
 
