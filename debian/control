@@ -14,6 +14,6 @@ Standards-Version: 3.9.3
 
 Package: com.github.alainm23.ioncolorgenerator
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, 
+Depends: ${misc:Depends}, ${shlibs:Depends},
 Description: Hey young world
  This is a Hello World written in Vala using Meson build system.
