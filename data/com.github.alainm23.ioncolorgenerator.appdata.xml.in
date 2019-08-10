@@ -21,7 +21,7 @@
   </releases>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/alainm23/ion-color-generator/master/data/screenshot-01.png</image>
+      <image>https://raw.githubusercontent.com/alainm23/ioncolorgenerator/master/data/screenshot-01.png</image>
     </screenshot>
   </screenshots>
   <content_rating type="oars-1.1">
@@ -54,8 +54,8 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <developer_name>Alain M.</developer_name>
-  <url type="homepage">https://github.com/alainm23/ion-color-generator</url>
-  <url type="bugtracker">https://github.com/alainm23/ion-color-generator/issues</url>
+  <url type="homepage">https://github.com/alainm23/ioncolorgenerator</url>
+  <url type="bugtracker">https://github.com/alainm23/ioncolorgenerator/issues</url>
   <url type="donation">https://www.patreon.com/alainm23</url>
   <url type="help">https://www.patreon.com/alainm23</url>
   <custom>

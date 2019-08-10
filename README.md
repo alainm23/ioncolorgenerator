@@ -4,7 +4,7 @@
   <a href="https://appcenter.elementary.io/com.github.alainm23.com.github.alainm23.ioncolorgenerator"><img src="https://appcenter.elementary.io/badge.svg?new" alt="Get it on AppCenter" /></a>
 </div>
 
-![ion-color-generator](https://raw.githubusercontent.com/alainm23/ion-color-generator/master/data/screenshot-01.png)
+![ion-color-generator](https://raw.githubusercontent.com/alainm23/ioncolorgenerator/master/data/screenshot-01.png)
 
 ## Building and Installation
 
