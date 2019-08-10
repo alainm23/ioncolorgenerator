@@ -1,4 +1,4 @@
-project('com.github.alainm23.ion-color-generator',
+project('com.github.alainm23.ioncolorgenerator',
         'vala', 'c',
         version: '0.1')
 

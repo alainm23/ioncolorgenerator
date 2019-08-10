@@ -1,12 +1,12 @@
 # List of files installed by Meson
 # Does not contain files installed by custom scripts.
-/usr/bin/com.github.alainm23.ion-color-generator
-/usr/share/applications/com.github.alainm23.ion-color-generator.desktop
-/usr/share/metainfo/com.github.alainm23.ion-color-generator.appdata.xml
-/usr/share/icons/hicolor/48x48/apps/com.github.alainm23.ion-color-generator.svg
-/usr/share/icons/hicolor/48x48@2/apps/com.github.alainm23.ion-color-generator.svg
-/usr/share/icons/hicolor/64x64/apps/com.github.alainm23.ion-color-generator.svg
-/usr/share/icons/hicolor/64x64@2/apps/com.github.alainm23.ion-color-generator.svg
-/usr/share/icons/hicolor/128x128/apps/com.github.alainm23.ion-color-generator.svg
-/usr/share/icons/hicolor/128x128@2/apps/com.github.alainm23.ion-color-generator.svg
-/usr/share/glib-2.0/schemas/com.github.alainm23.ion-color-generator.gschema.xml
+/usr/bin/com.github.alainm23.ioncolorgenerator
+/usr/share/applications/com.github.alainm23.ioncolorgenerator.desktop
+/usr/share/metainfo/com.github.alainm23.ioncolorgenerator.appdata.xml
+/usr/share/icons/hicolor/48x48/apps/com.github.alainm23.ioncolorgenerator.svg
+/usr/share/icons/hicolor/48x48@2/apps/com.github.alainm23.ioncolorgenerator.svg
+/usr/share/icons/hicolor/64x64/apps/com.github.alainm23.ioncolorgenerator.svg
+/usr/share/icons/hicolor/64x64@2/apps/com.github.alainm23.ioncolorgenerator.svg
+/usr/share/icons/hicolor/128x128/apps/com.github.alainm23.ioncolorgenerator.svg
+/usr/share/icons/hicolor/128x128@2/apps/com.github.alainm23.ioncolorgenerator.svg
+/usr/share/glib-2.0/schemas/com.github.alainm23.ioncolorgenerator.gschema.xml

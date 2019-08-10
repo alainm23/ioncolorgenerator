@@ -41,7 +41,7 @@ public class MainWindow : Gtk.Window {
             application: application,
             height_request: 500,
             width_request: 700,
-            icon_name: "com.github.alainm23.ion-color-generator",
+            icon_name: "com.github.alainm23.ioncolorgenerator",
             title: "Ion Color Generator",
             resizable: false
         );

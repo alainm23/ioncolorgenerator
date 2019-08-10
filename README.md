@@ -1,7 +1,7 @@
 <div align="center">
   <h1 align="center">Ion Color Generator</h1>
  
-  <a href="https://appcenter.elementary.io/com.github.alainm23.ion-color-generator"><img src="https://appcenter.elementary.io/badge.svg?new" alt="Get it on AppCenter" /></a>
+  <a href="https://appcenter.elementary.io/com.github.alainm23.com.github.alainm23.ioncolorgenerator"><img src="https://appcenter.elementary.io/badge.svg?new" alt="Get it on AppCenter" /></a>
 </div>
 
 ![ion-color-generator](https://raw.githubusercontent.com/alainm23/ion-color-generator/master/data/screenshot-01.png)
@@ -25,11 +25,11 @@ cd build
 ninja
 ```
 
-To install, use `ninja install`, then execute with `com.github.alainm23.ion-color-generator`
+To install, use `ninja install`, then execute with `com.github.alainm23.ioncolorgenerator`
 
 ```bash
 ninja install
-com.github.alainm23.ion-color-generator
+com.github.alainm23.ioncolorgenerator
 ```
 
 ## Donations

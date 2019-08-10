@@ -5,5 +5,5 @@
 
 #pragma once
 
-#define GETTEXT_PACKAGE "com.github.alainm23.ion-color-generator"
+#define GETTEXT_PACKAGE "com.github.alainm23.ioncolorgenerator"
 

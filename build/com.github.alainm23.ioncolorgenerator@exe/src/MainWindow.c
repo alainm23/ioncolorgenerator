@@ -104,7 +104,7 @@ MainWindow* main_window_construct (GType object_type,
                                    Application* application);
 static gboolean main_window_real_configure_event (GtkWidget* base,
                                            GdkEventConfigure* event);
-static GVariant* _variant_new5 (gint* value,
+static GVariant* _variant_new3 (gint* value,
                          gint value_length1);
 static void main_window_update_template (MainWindow* self);
 static gchar* main_window_double_to_string (MainWindow* self,
@@ -150,7 +150,7 @@ main_window_construct (GType object_type,
 #line 39 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_return_val_if_fail (application != NULL, NULL);
 #line 40 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
-	self = (MainWindow*) g_object_new (object_type, "application", application, "height-request", 500, "width-request", 700, "icon-name", "com.github.alainm23.ion-color-generator", "title", "Ion Color Generator", "resizable", FALSE, NULL);
+	self = (MainWindow*) g_object_new (object_type, "application", application, "height-request", 500, "width-request", 700, "icon-name", "com.github.alainm23.ioncolorgenerator", "title", "Ion Color Generator", "resizable", FALSE, NULL);
 #line 39 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	return self;
 #line 157 "MainWindow.c"
@@ -167,7 +167,7 @@ main_window_new (Application* application)
 
 
 static GVariant*
-_variant_new5 (gint* value,
+_variant_new3 (gint* value,
                gint value_length1)
 {
 	gint* _tmp5_;
@@ -229,7 +229,7 @@ main_window_real_configure_event (GtkWidget* base,
 #line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	_tmp4__length1 = 2;
 #line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
-	_tmp8_ = _variant_new5 (_tmp4_, 2);
+	_tmp8_ = _variant_new3 (_tmp4_, 2);
 #line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"
 	g_settings_set_value (_tmp2_, "window-position", _tmp8_);
 #line 156 "/home/alain/Proyectos/ion-color-generator/src/MainWindow.vala"

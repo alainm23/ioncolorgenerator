@@ -1,4 +1,4 @@
-Source: com.github.alainm23.ion-color-generator
+Source: com.github.alainm23.ioncolorgenerator
 Section: x11
 Priority: extra
 Maintainer: Alain M. <alainmh23@gmail.com>
@@ -12,7 +12,7 @@ Build-Depends: appstream,
                valac (>= 0.26)
 Standards-Version: 3.9.3
 
-Package: com.github.alainm23.ion-color-generator
+Package: com.github.alainm23.ioncolorgenerator
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, 
 Description: Hey young world

@@ -27,8 +27,8 @@
 #include <glib-object.h>
 #include <gtk/gtk.h>
 #include <gio/gio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 #include <gdk/gdk.h>
 
 
@@ -84,8 +84,6 @@ Application* application_construct (GType object_type);
 static void application_real_activate (GApplication* base);
 static gint32 _variant_get1 (GVariant* value);
 static gint32 _variant_get2 (GVariant* value);
-static gint32 _variant_get3 (GVariant* value);
-static gint32 _variant_get4 (GVariant* value);
 MainWindow* main_window_new (Application* application);
 MainWindow* main_window_construct (GType object_type,
                                    Application* application);
@@ -114,10 +112,10 @@ application_construct (GType object_type)
 {
 	Application * self = NULL;
 #line 27 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	self = (Application*) g_object_new (object_type, "application-id", "com.github.alainm23.ion-color-generator", "flags", G_APPLICATION_FLAGS_NONE, NULL);
+	self = (Application*) g_object_new (object_type, "application-id", "com.github.alainm23.ioncolorgenerator", "flags", G_APPLICATION_FLAGS_NONE, NULL);
 #line 26 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	return self;
-#line 121 "Application.c"
+#line 119 "Application.c"
 }
 
 
@@ -126,43 +124,25 @@ application_new (void)
 {
 #line 26 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	return application_construct (TYPE_APPLICATION);
-#line 130 "Application.c"
+#line 128 "Application.c"
 }
 
 
 static gint32
 _variant_get1 (GVariant* value)
 {
-#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 55 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	return g_variant_get_int32 (value);
-#line 139 "Application.c"
+#line 137 "Application.c"
 }
 
 
 static gint32
 _variant_get2 (GVariant* value)
 {
-#line 57 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	return g_variant_get_int32 (value);
-#line 148 "Application.c"
-}
-
-
-static gint32
-_variant_get3 (GVariant* value)
-{
-#line 60 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	return g_variant_get_int32 (value);
-#line 157 "Application.c"
-}
-
-
-static gint32
-_variant_get4 (GVariant* value)
-{
-#line 61 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	return g_variant_get_int32 (value);
-#line 166 "Application.c"
+#line 146 "Application.c"
 }
 
 
@@ -170,17 +150,17 @@ static void
 __lambda6_ (Application* self)
 {
 	MainWindow* _tmp0_;
-#line 76 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 70 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_tmp0_ = self->main_window;
-#line 76 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 70 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	if (_tmp0_ != NULL) {
-#line 178 "Application.c"
+#line 158 "Application.c"
 		MainWindow* _tmp1_;
-#line 77 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 71 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 		_tmp1_ = self->main_window;
-#line 77 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 71 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 		gtk_widget_destroy ((GtkWidget*) _tmp1_);
-#line 184 "Application.c"
+#line 164 "Application.c"
 	}
 }
 
@@ -190,9 +170,9 @@ ___lambda6__g_simple_action_activate (GSimpleAction* _sender,
                                       GVariant* parameter,
                                       gpointer self)
 {
-#line 75 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 69 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	__lambda6_ ((Application*) self);
-#line 196 "Application.c"
+#line 176 "Application.c"
 }
 
 
@@ -201,59 +181,45 @@ application_real_activate (GApplication* base)
 {
 	Application * self;
 	GList* _tmp0_;
-	GVariant* window_size = NULL;
+	GVariant* window_position = NULL;
 	GSettings* _tmp3_;
 	GVariant* _tmp4_;
-	GtkAllocation rect = {0};
+	gint32 window_x = 0;
 	GVariant* _tmp5_;
 	GVariant* _tmp6_;
 	GVariant* _tmp7_;
 	gint32 _tmp8_;
-	GVariant* _tmp9_;
+	gint32 _tmp9_;
+	gint32 window_y = 0;
 	GVariant* _tmp10_;
 	GVariant* _tmp11_;
-	gint32 _tmp12_;
-	GVariant* window_position = NULL;
-	GSettings* _tmp13_;
-	GVariant* _tmp14_;
-	gint32 window_x = 0;
-	GVariant* _tmp15_;
-	GVariant* _tmp16_;
-	GVariant* _tmp17_;
-	gint32 _tmp18_;
-	gint32 _tmp19_;
-	gint32 window_y = 0;
-	GVariant* _tmp20_;
-	GVariant* _tmp21_;
-	GVariant* _tmp22_;
-	gint32 _tmp23_;
-	gint32 _tmp24_;
-	MainWindow* _tmp25_;
-	gboolean _tmp26_ = FALSE;
-	gint32 _tmp27_;
-	MainWindow* _tmp32_;
-	GtkAllocation _tmp33_;
-	MainWindow* _tmp34_;
+	GVariant* _tmp12_;
+	gint32 _tmp13_;
+	gint32 _tmp14_;
+	MainWindow* _tmp15_;
+	gboolean _tmp16_ = FALSE;
+	gint32 _tmp17_;
+	MainWindow* _tmp22_;
 	GSimpleAction* quit_action = NULL;
-	GSimpleAction* _tmp35_;
-	gchar* _tmp36_;
-	gchar** _tmp37_;
-	gchar** _tmp38_;
-	gint _tmp38__length1;
-	GSimpleAction* _tmp39_;
-	GSimpleAction* _tmp40_;
+	GSimpleAction* _tmp23_;
+	gchar* _tmp24_;
+	gchar** _tmp25_;
+	gchar** _tmp26_;
+	gint _tmp26__length1;
+	GSimpleAction* _tmp27_;
+	GSimpleAction* _tmp28_;
 	GtkCssProvider* provider = NULL;
-	GtkCssProvider* _tmp41_;
-	GtkCssProvider* _tmp42_;
-	GdkScreen* _tmp43_;
-	GtkCssProvider* _tmp44_;
+	GtkCssProvider* _tmp29_;
+	GtkCssProvider* _tmp30_;
+	GdkScreen* _tmp31_;
+	GtkCssProvider* _tmp32_;
 #line 48 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	self = (Application*) base;
 #line 49 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_tmp0_ = gtk_application_get_windows ((GtkApplication*) self);
 #line 49 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	if (g_list_length (_tmp0_) > ((guint) 0)) {
-#line 257 "Application.c"
+#line 223 "Application.c"
 		GList* _tmp1_;
 		gconstpointer _tmp2_;
 #line 50 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
@@ -264,181 +230,141 @@ application_real_activate (GApplication* base)
 		gtk_window_present ((GtkWindow*) _tmp2_);
 #line 51 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 		return;
-#line 268 "Application.c"
+#line 234 "Application.c"
 	}
 #line 54 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_tmp3_ = application_settings;
 #line 54 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp4_ = g_settings_get_value (_tmp3_, "window-size");
+	_tmp4_ = g_settings_get_value (_tmp3_, "window-position");
 #line 54 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	window_size = _tmp4_;
+	window_position = _tmp4_;
 #line 55 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	memset (&rect, 0, sizeof (GtkAllocation));
-#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp5_ = window_size;
-#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp5_ = window_position;
+#line 55 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_tmp6_ = g_variant_get_child_value (_tmp5_, (gsize) 0);
-#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 55 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_tmp7_ = _tmp6_;
-#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 55 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_tmp8_ = _variant_get1 (_tmp7_);
-#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	rect.height = (gint) _tmp8_;
-#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 55 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp9_ = _tmp8_;
+#line 55 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_g_variant_unref0 (_tmp7_);
-#line 57 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp9_ = window_size;
-#line 57 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp10_ = g_variant_get_child_value (_tmp9_, (gsize) 1);
-#line 57 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp11_ = _tmp10_;
-#line 57 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp12_ = _variant_get2 (_tmp11_);
-#line 57 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	rect.width = (gint) _tmp12_;
-#line 57 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_g_variant_unref0 (_tmp11_);
-#line 59 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp13_ = application_settings;
-#line 59 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp14_ = g_settings_get_value (_tmp13_, "window-position");
-#line 59 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	window_position = _tmp14_;
-#line 60 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp15_ = window_position;
-#line 60 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp16_ = g_variant_get_child_value (_tmp15_, (gsize) 0);
-#line 60 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp17_ = _tmp16_;
-#line 60 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp18_ = _variant_get3 (_tmp17_);
-#line 60 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp19_ = _tmp18_;
-#line 60 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_g_variant_unref0 (_tmp17_);
-#line 60 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	window_x = _tmp19_;
-#line 61 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp20_ = window_position;
-#line 61 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp21_ = g_variant_get_child_value (_tmp20_, (gsize) 1);
-#line 61 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp22_ = _tmp21_;
-#line 61 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp23_ = _variant_get4 (_tmp22_);
-#line 61 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp24_ = _tmp23_;
-#line 61 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_g_variant_unref0 (_tmp22_);
-#line 61 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	window_y = _tmp24_;
-#line 63 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp25_ = main_window_new (self);
-#line 63 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	g_object_ref_sink (_tmp25_);
-#line 63 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 55 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	window_x = _tmp9_;
+#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp10_ = window_position;
+#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp11_ = g_variant_get_child_value (_tmp10_, (gsize) 1);
+#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp12_ = _tmp11_;
+#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp13_ = _variant_get2 (_tmp12_);
+#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp14_ = _tmp13_;
+#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_g_variant_unref0 (_tmp12_);
+#line 56 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	window_y = _tmp14_;
+#line 58 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp15_ = main_window_new (self);
+#line 58 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	g_object_ref_sink (_tmp15_);
+#line 58 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_g_object_unref0 (self->main_window);
-#line 63 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	self->main_window = _tmp25_;
-#line 64 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp27_ = window_x;
-#line 64 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	if (_tmp27_ != ((gint32) -1)) {
-#line 64 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-		_tmp26_ = TRUE;
-#line 350 "Application.c"
+#line 58 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	self->main_window = _tmp15_;
+#line 59 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp17_ = window_x;
+#line 59 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	if (_tmp17_ != ((gint32) -1)) {
+#line 59 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+		_tmp16_ = TRUE;
+#line 284 "Application.c"
 	} else {
-		gint32 _tmp28_;
-#line 64 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-		_tmp28_ = window_y;
-#line 64 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-		_tmp26_ = _tmp28_ != ((gint32) -1);
-#line 357 "Application.c"
+		gint32 _tmp18_;
+#line 59 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+		_tmp18_ = window_y;
+#line 59 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+		_tmp16_ = _tmp18_ != ((gint32) -1);
+#line 291 "Application.c"
 	}
-#line 64 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	if (_tmp26_) {
-#line 361 "Application.c"
-		MainWindow* _tmp29_;
-		gint32 _tmp30_;
-		gint32 _tmp31_;
-#line 65 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-		_tmp29_ = self->main_window;
-#line 65 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-		_tmp30_ = window_x;
-#line 65 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-		_tmp31_ = window_y;
-#line 65 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-		gtk_window_move ((GtkWindow*) _tmp29_, (gint) _tmp30_, (gint) _tmp31_);
-#line 373 "Application.c"
+#line 59 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	if (_tmp16_) {
+#line 295 "Application.c"
+		MainWindow* _tmp19_;
+		gint32 _tmp20_;
+		gint32 _tmp21_;
+#line 60 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+		_tmp19_ = self->main_window;
+#line 60 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+		_tmp20_ = window_x;
+#line 60 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+		_tmp21_ = window_y;
+#line 60 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+		gtk_window_move ((GtkWindow*) _tmp19_, (gint) _tmp20_, (gint) _tmp21_);
+#line 307 "Application.c"
 	}
-#line 68 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp32_ = self->main_window;
-#line 68 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp33_ = rect;
-#line 68 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	gtk_widget_set_allocation ((GtkWidget*) _tmp32_, &_tmp33_);
+#line 63 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp22_ = self->main_window;
+#line 63 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	gtk_widget_show_all ((GtkWidget*) _tmp22_);
+#line 66 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp23_ = g_simple_action_new ("quit", NULL);
+#line 66 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	quit_action = _tmp23_;
+#line 67 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp24_ = g_strdup ("<Control>q");
+#line 67 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp25_ = g_new0 (gchar*, 1 + 1);
+#line 67 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp25_[0] = _tmp24_;
+#line 67 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp26_ = _tmp25_;
+#line 67 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp26__length1 = 1;
+#line 67 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	gtk_application_set_accels_for_action ((GtkApplication*) self, "app.quit", _tmp26_);
+#line 67 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp26_ = (_vala_array_free (_tmp26_, _tmp26__length1, (GDestroyNotify) g_free), NULL);
 #line 69 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp34_ = self->main_window;
+	_tmp27_ = quit_action;
 #line 69 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	gtk_widget_show_all ((GtkWidget*) _tmp34_);
-#line 72 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp35_ = g_simple_action_new ("quit", NULL);
-#line 72 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	quit_action = _tmp35_;
-#line 73 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp36_ = g_strdup ("<Control>q");
-#line 73 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp37_ = g_new0 (gchar*, 1 + 1);
-#line 73 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp37_[0] = _tmp36_;
-#line 73 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp38_ = _tmp37_;
-#line 73 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp38__length1 = 1;
-#line 73 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	gtk_application_set_accels_for_action ((GtkApplication*) self, "app.quit", _tmp38_);
-#line 73 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp38_ = (_vala_array_free (_tmp38_, _tmp38__length1, (GDestroyNotify) g_free), NULL);
+	g_signal_connect_object (_tmp27_, "activate", (GCallback) ___lambda6__g_simple_action_activate, self, 0);
 #line 75 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp39_ = quit_action;
+	_tmp28_ = quit_action;
 #line 75 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	g_signal_connect_object (_tmp39_, "activate", (GCallback) ___lambda6__g_simple_action_activate, self, 0);
-#line 81 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp40_ = quit_action;
-#line 81 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	g_action_map_add_action ((GActionMap*) self, (GAction*) _tmp40_);
-#line 84 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp41_ = gtk_css_provider_new ();
-#line 84 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	provider = _tmp41_;
-#line 85 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp42_ = provider;
-#line 85 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	gtk_css_provider_load_from_resource (_tmp42_, "/com/github/alainm23/ion-color-generator/stylesheet.css");
-#line 86 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp43_ = gdk_screen_get_default ();
-#line 86 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp44_ = provider;
-#line 86 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	gtk_style_context_add_provider_for_screen (_tmp43_, (GtkStyleProvider*) _tmp44_, (guint) GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+	g_action_map_add_action ((GActionMap*) self, (GAction*) _tmp28_);
+#line 78 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp29_ = gtk_css_provider_new ();
+#line 78 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	provider = _tmp29_;
+#line 79 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp30_ = provider;
+#line 79 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	gtk_css_provider_load_from_resource (_tmp30_, "/com/github/alainm23/ioncolorgenerator/stylesheet.css");
+#line 80 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp31_ = gdk_screen_get_default ();
+#line 80 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	_tmp32_ = provider;
+#line 80 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+	gtk_style_context_add_provider_for_screen (_tmp31_, (GtkStyleProvider*) _tmp32_, (guint) GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 #line 48 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_g_object_unref0 (provider);
 #line 48 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_g_object_unref0 (quit_action);
 #line 48 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_g_variant_unref0 (window_position);
-#line 48 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_g_variant_unref0 (window_size);
-#line 433 "Application.c"
+#line 359 "Application.c"
 }
 
 
 static gpointer
 _g_object_ref0 (gpointer self)
 {
-#line 90 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 84 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	return self ? g_object_ref (self) : NULL;
-#line 442 "Application.c"
+#line 368 "Application.c"
 }
 
 
@@ -451,21 +377,21 @@ application_main (gchar** args,
 	Application* _tmp0_;
 	Application* _tmp1_;
 	Application* _tmp2_;
-#line 90 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 84 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_tmp0_ = application_get_instance ();
-#line 90 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 84 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_tmp1_ = _tmp0_;
-#line 90 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 84 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_tmp2_ = _g_object_ref0 (_tmp1_);
-#line 90 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 84 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	app = _tmp2_;
-#line 91 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 85 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	result = g_application_run ((GApplication*) app, args_length1, args);
-#line 91 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 85 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_g_object_unref0 (app);
-#line 91 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 85 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	return result;
-#line 469 "Application.c"
+#line 395 "Application.c"
 }
 
 
@@ -473,9 +399,9 @@ int
 main (int argc,
       char ** argv)
 {
-#line 89 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
+#line 83 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	return application_main (argv, argc);
-#line 479 "Application.c"
+#line 405 "Application.c"
 }
 
 
@@ -489,7 +415,7 @@ application_get_instance (void)
 	_tmp0_ = application__instance;
 #line 41 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	if (_tmp0_ == NULL) {
-#line 493 "Application.c"
+#line 419 "Application.c"
 		Application* _tmp1_;
 #line 42 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 		_tmp1_ = application_new ();
@@ -497,7 +423,7 @@ application_get_instance (void)
 		_g_object_unref0 (application__instance);
 #line 42 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 		application__instance = _tmp1_;
-#line 501 "Application.c"
+#line 427 "Application.c"
 	}
 #line 44 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_tmp2_ = application__instance;
@@ -505,7 +431,7 @@ application_get_instance (void)
 	result = _tmp2_;
 #line 44 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	return result;
-#line 509 "Application.c"
+#line 435 "Application.c"
 }
 
 
@@ -522,12 +448,12 @@ application_class_init (ApplicationClass * klass)
 #line 22 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	G_OBJECT_CLASS (klass)->finalize = application_finalize;
 #line 34 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
-	_tmp0_ = g_settings_new ("com.github.alainm23.ion-color-generator");
+	_tmp0_ = g_settings_new ("com.github.alainm23.ioncolorgenerator");
 #line 34 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	_g_object_unref0 (application_settings);
 #line 34 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	application_settings = _tmp0_;
-#line 531 "Application.c"
+#line 457 "Application.c"
 }
 
 
@@ -547,7 +473,7 @@ application_finalize (GObject * obj)
 	_g_object_unref0 (self->main_window);
 #line 22 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	G_OBJECT_CLASS (application_parent_class)->finalize (obj);
-#line 551 "Application.c"
+#line 477 "Application.c"
 }
 
 
@@ -575,13 +501,13 @@ _vala_application_get_property (GObject * object,
 	self = G_TYPE_CHECK_INSTANCE_CAST (object, TYPE_APPLICATION, Application);
 #line 22 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 	switch (property_id) {
-#line 579 "Application.c"
+#line 505 "Application.c"
 		default:
 #line 22 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 		G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
 #line 22 "/home/alain/Proyectos/ion-color-generator/src/Application.vala"
 		break;
-#line 585 "Application.c"
+#line 511 "Application.c"
 	}
 }
 

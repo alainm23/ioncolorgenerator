@@ -25,13 +25,13 @@ public class Application : Gtk.Application {
 
     public Application () {
         Object (
-            application_id: "com.github.alainm23.ion-color-generator",
+            application_id: "com.github.alainm23.ioncolorgenerator",
             flags: ApplicationFlags.FLAGS_NONE
         );
     }
 
     static construct {  
-        settings = new Settings ("com.github.alainm23.ion-color-generator");
+        settings = new Settings ("com.github.alainm23.ioncolorgenerator");
     }
 
     public static Application _instance = null;
@@ -51,11 +51,6 @@ public class Application : Gtk.Application {
             return;
         }
 
-        var window_size = settings.get_value ("window-size");
-        var rect = Gtk.Allocation ();
-        rect.height = (int32) window_size.get_child_value (0);
-        rect.width =  (int32) window_size.get_child_value (1);
-
         var window_position = settings.get_value ("window-position");
         var window_x = (int32) window_position.get_child_value (0);
         var window_y = (int32) window_position.get_child_value (1);
@@ -64,8 +59,7 @@ public class Application : Gtk.Application {
         if (window_x != -1 ||  window_y != -1) {
             main_window.move (window_x, window_y);
         }
-
-        main_window.set_allocation (rect);
+        
         main_window.show_all ();
 
         // Actions
@@ -82,7 +76,7 @@ public class Application : Gtk.Application {
 
         // Stylesheet
         var provider = new Gtk.CssProvider ();
-        provider.load_from_resource ("/com/github/alainm23/ion-color-generator/stylesheet.css");
+        provider.load_from_resource ("/com/github/alainm23/ioncolorgenerator/stylesheet.css");
         Gtk.StyleContext.add_provider_for_screen (Gdk.Screen.get_default (), provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
     }
 
