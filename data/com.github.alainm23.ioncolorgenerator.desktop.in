@@ -8,4 +8,5 @@ Icon=com.github.alainm23.ioncolorgenerator
 Terminal=false
 Type=Application
 X-GNOME-Gettext-Domain=ioncolorgenerator
-Keywords=ionic;ion;color;generator;css;sass; 
+Keywords=ionic;ion;color;generator;rgb;
+X-GNOME-UsesNotifications=false
