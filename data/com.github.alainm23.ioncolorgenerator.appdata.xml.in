@@ -13,6 +13,13 @@
     <binary>com.github.alainm23.ioncolorgenerator</binary>
   </provides>
   ​<releases>
+    <release version="0.1.2" date="2019-10-11">
+        <description>
+            <li>French translation @dabou 🇲🇫️</li>
+            <li>Spanish translation @alainm23</li>
+        </description>
+    </release>
+
     <release version="0.1.1" date="2019-08-9">
         <description>
             <p>Initial release</p>
