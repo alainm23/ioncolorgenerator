@@ -1,0 +1,5 @@
+src/Application.vala
+src/MainWindow.vala
+
+data/com.github.alainm23.ioncolorgenerator.appdata.xml.in
+data/com.github.alainm23.ioncolorgenerator.desktop.in
