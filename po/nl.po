@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the com.github.alainm23.ioncolorgenerator package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: com.github.alainm23.ioncolorgenerator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-09 09:43+0200\n"
+"PO-Revision-Date: 2020-08-21 19:28+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+
+#. Main Grid
+#: src/MainWindow.vala:75
+msgid "Color Name"
+msgstr "Kleurnaam"
+
+#: src/MainWindow.vala:79
+msgid "Base Color"
+msgstr "Basiskleur"
+
+#: src/MainWindow.vala:95
+msgid "Copy"
+msgstr "Kopiëren"
+
+#: src/MainWindow.vala:121
+msgid "Copy to clipboard!!!"
+msgstr "Kopiëren naar klembord"
+
+#: data/com.github.alainm23.ioncolorgenerator.appdata.xml.in:7
+#: data/com.github.alainm23.ioncolorgenerator.desktop.in:3
+#: data/com.github.alainm23.ioncolorgenerator.desktop.in:4
+msgid "Ion Color Generator"
+msgstr "Ion-kleurgenerator"
+
+#: data/com.github.alainm23.ioncolorgenerator.appdata.xml.in:8
+msgid "Create custom color for your Ionic app’s UI"
+msgstr "Genereer aangepaste kleuren voor de vormgeving van je Ionic-app"
+
+#: data/com.github.alainm23.ioncolorgenerator.appdata.xml.in:10
+msgid "Fast and easy. Just enter a color, copy and paste into your Ionic project"
+msgstr "Snel en gemakkelijk: voer een kleur in en kopieer en plak deze in je Ionic-project"
+
+#: data/com.github.alainm23.ioncolorgenerator.appdata.xml.in:56
+msgid "Alain M."
+msgstr "Alain M."
+
+#: data/com.github.alainm23.ioncolorgenerator.desktop.in:5
+msgid "Create custom color for your Ionic app’s UI."
+msgstr "Genereer aangepaste kleuren voor de vormgeving van je Ionic-app."
+
+#: data/com.github.alainm23.ioncolorgenerator.desktop.in:8
+msgid "com.github.alainm23.ioncolorgenerator"
+msgstr "com.github.alainm23.ioncolorgenerator"
+
+#: data/com.github.alainm23.ioncolorgenerator.desktop.in:12
+msgid "ionic;ion;color;generator;rgb;css;"
+msgstr "ionic;ion;kleur;generator;rgb;css;"
